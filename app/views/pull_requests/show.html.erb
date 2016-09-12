@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Github:</strong>
+  <%= @pull_request.github_id %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @pull_request.url %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @pull_request.number %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @pull_request.state %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @pull_request.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @pull_request.body %>
+</p>
+
+<p>
+  <strong>Assignee:</strong>
+  <%= @pull_request.assignee %>
+</p>
+
+<p>
+  <strong>Repo name:</strong>
+  <%= @pull_request.repo_name %>
+</p>
+
+<p>
+  <strong>Repo full name:</strong>
+  <%= @pull_request.repo_full_name %>
+</p>
+
+<%= link_to 'Edit', edit_pull_request_path(@pull_request) %> |
+<%= link_to 'Back', pull_requests_path %>

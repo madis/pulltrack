@@ -1,0 +1,2 @@
+json.extract! pull_request, :id, :github_id, :url, :number, :state, :title, :body, :assignee, :repo_name, :repo_full_name, :created_at, :updated_at
+json.url pull_request_url(pull_request, format: :json)
